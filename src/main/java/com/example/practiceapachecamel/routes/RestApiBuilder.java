@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.http.HttpConstants;
+import org.apache.camel.model.rest.RestBindingMode;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ContentType;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,7 +27,8 @@ public class RestApiBuilder extends RouteBuilder {
 
     private String scheme = "http";
 
-    private String host = "localhost";
+    @Value("${camel.component.netty-http.host}")
+    private String host;
 
     @Value("${camel.component.netty-http.port}")
     private String port;
@@ -40,7 +42,7 @@ public class RestApiBuilder extends RouteBuilder {
         response.statusCode = HttpStatus.OK.value();
         String url = String.format("%s://%s:%s/hello2?bridgeEndpoint=true", scheme, host, port);
 
-        restConfiguration().component("netty-http").host(host).port(port);
+        restConfiguration().component("servlet").bindingMode(RestBindingMode.auto);
         from("rest:post:hello1")
                 .setHeader(Exchange.HTTP_METHOD, () -> HttpPost.METHOD_NAME)
                 .setHeader(HttpConstants.CONTENT_TYPE, () -> ContentType.APPLICATION_JSON)
