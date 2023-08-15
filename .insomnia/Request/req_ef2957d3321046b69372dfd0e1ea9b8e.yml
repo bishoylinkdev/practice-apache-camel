@@ -1,0 +1,29 @@
+_id: req_ef2957d3321046b69372dfd0e1ea9b8e
+type: Request
+parentId: wrk_203eaf52675b46d9850f04f0032f40dc
+modified: 1692106128371
+created: 1690899623449
+url: https://practice-apache-camel-bishoy-adly-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/hello1
+name: New Request
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "bishoy",
+    	"age": 30
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1690899623449
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

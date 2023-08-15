@@ -1,0 +1,124 @@
+_id: req_248f13a468694be1999ec38eef8d1f53
+type: Request
+parentId: wrk_203eaf52675b46d9850f04f0032f40dc
+modified: 1687093133100
+created: 1683538178689
+url: https://dev-15.ixcc-sandbox.avayacloud.com/api/digital/transcript/command/v1alpha/accounts/DRMAWG/engagements/dfd117d7-73e3-4436-8bd7-3ce8f1a009ad/dialogs/bb4f5cf8-5bfc-4bf3-ac43-153c43671f0e/transcripts:save
+name: Save Transcript
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"customerIdentifiers": [{
+    		"identifierType": "email",
+    		"identifierValue": [
+    			"test@email.com"
+    		]
+    	}],
+    	"channelType": "CHAT",
+    	"messages": [
+    		{
+    			"messageId": "bfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    			"createdOn": "2023-03-11T12:26:27.007Z",
+    			"sender": {
+    				"participantId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    				"participantType": "CUSTOMER",
+    				"displayName": "participant name",
+    				"connectionId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    				"participantAddress": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed"
+    			},
+    			"recipients": [
+    				{
+    					"participantId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    					"participantType": "CUSTOMER",
+    					"displayName": "participant name",
+    					"connectionId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    					"participantAddress": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed"
+    				}
+    			],
+    			"attributes": [
+    				{
+    					"name": "language",
+    					"value": "english"
+    				}
+    			],
+    			"body": {
+    				"elementType": "text",
+    				"elementText": {
+    					"text": "string",
+    					"textFormat": "PLAINTEXT"
+    				},
+    				"payload": "this is message body"
+    			},
+    			"attachments": [
+    			],
+    			"header": {
+    				"priority": "high",
+    				"sensitivity": "high",
+    				"encoding": "utf8",
+    				"subject": "an important message",
+    				"from": "email@emai.com",
+    				"to": [
+    					"email@email.com"
+    				],
+    				"cc": [
+    					"email@email.com"
+    				],
+    				"bcc": [
+    					"email@email.com"
+    				],
+    				"replyTo": "email@email.com",
+    				"clientDeviceTag": "TAG1",
+    				"messageSourceServerTag": "TAG",
+    				"providerTimestamp": "2023-05-08T09:28:21.440Z",
+    				"additionalHeaders": {
+    					"additionalProp1": "custom header value",
+    					"additionalProp2": "custom header value",
+    					"additionalProp3": "custom header value"
+    				}
+    			},
+    			"provider": {
+    				"channelId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    				"dialogId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    				"messageId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    				"senderParticipantId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    				"parentMessageId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed"
+    			},
+    			"correlationId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    			"fallbackText": "Original Text not available, you are seeing a fallback text.",
+    			"customData": {
+    				"additionalProp1": "string",
+    				"additionalProp2": "string",
+    				"additionalProp3": "string"
+    			},
+    			"parentMessageId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    			"businessAccountName": "account@account.com",
+    			"messageLastUpdatedTimestamp": "2023-03-11T12:26:27.007Z",
+    			"messageReceivedTimestamp": "2023-05-08T09:28:21.440Z",
+    			"senderParticipantClientSessionId": "string",
+    			"originalBodyPartId": "dfd117d7-73e3-4436-8bd7-3ce8f1a008ed",
+    			"messageType": "NEW",
+    			"messageDirection": "INCOMING",
+    			"messageIndex": 0,
+    			"privateMessage": false
+    		}
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIxWnoyc1B4VHBzeThtc0pkU3dRb3A3aHdDcWNCZ0FnMW1zTjZRczVTVXFNIn0.eyJleHAiOjE2ODcwOTM1ODUsImlhdCI6MTY4NzA5MjY4NSwiYXV0aF90aW1lIjoxNjg3MDc2OTkxLCJqdGkiOiI4ZjA5NmFiYi0xOGIzLTQ3ZGItYTljZC1mZTUzYWU4NmFkMjYiLCJpc3MiOiJodHRwczovL2Rldi0xNS5peGNjLXNhbmRib3guYXZheWFjbG91ZC5jb20vYXV0aC9yZWFsbXMvRFJNQVdHIiwiYXVkIjpbImFjY291bnQiLCJ1d2YiXSwic3ViIjoiYWRtaW5AcmVkaXMuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoidXdmIiwic2Vzc2lvbl9zdGF0ZSI6IjhlZDMzZTNjLWM5MjUtNDRkNy04NWQ5LWU3MGVlYmIwOTlkYSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1kcm1hd2ciLCJXb3Jrc3BhY2VzIEFkbWluIFdpZGdldHMgQWRtaW5pc3RyYXRvciIsIkFkbWluaXN0cmF0b3IiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwidXNlciJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIGVtYWlsIHByb2ZpbGUiLCJzaWQiOiI4ZWQzM2UzYy1jOTI1LTQ0ZDctODVkOS1lNzBlZWJiMDk5ZGEiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaWRwIjoiZmxleCIsIm5hbWUiOiJhZG1pbiByZWRpcyIsInRlbmFudElkIjoiRFJNQVdHIiwiZ3JvdXBzIjpbIi9EUk1BV0ciXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW5AcmVkaXMuY29tIiwidXNlclVVSUQiOiJmNDU3Y2QxMC0yMzgyLTQ1MjYtYmQxMC1lZDMyMmRmMzhjYmQiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJmYW1pbHlfbmFtZSI6InJlZGlzIn0.eKB9u3X61PtYvmqjX2lUgkCCdALkXNl-RXkwhgChYBv2iiVAD4E3RWKUSWeEAGr680vZnMuw2vTMkjbfLR79mdRw1xUku3WFyeJlPHFMQNiIZKOfbdXRM5ke5zbIgM2eW1Z8OuMCtqDsyJaPw2dAkRU73wG7JQBPR-ScGICbulIxAMfhCF2AExLEE7EshVPkKAY_5P-Ra2hopaCKLtj5PBVsnTdYEg4tQfynen31fgyzhw5LszJ2ypaFHLyM6sO7GH--m1HYAp10t5vJFkkgr2sETvQ7MLBbdd8MtiDEnpaN8i7DcAVTPBxJxxixWsTbTcqvs4mW-xS9QxBO_FNPzA
+  disabled: false
+metaSortKey: -1683538178689
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

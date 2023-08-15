@@ -1,0 +1,32 @@
+_id: req_c62a8edad2b14602a574a9bb90770ef2
+type: Request
+parentId: fld_6602970428ca4443a58f9d4fcc04ed2f
+modified: 1658321992844
+created: 1654618199429
+url: "{{ _.provisioningLocalhost }}/v1alpha/accounts/tenant1/smtp"
+name: Google SMTP
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"hostName": "{{ _.googleSmtpServer }}",
+    	"emailAddress": "{{ _.googleEmailAdress }}",
+    	"toEmailAddress": "cloud_apps_dev@outlook.com",
+    	"accessToken": "{{ _.googleToken }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ac3e54e9e8b84ce2b78d8f0e60cf24dd
+authentication: {}
+metaSortKey: -1652055688005.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

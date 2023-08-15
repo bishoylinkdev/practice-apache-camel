@@ -1,0 +1,30 @@
+_id: req_1f512c1c41d047738b52c508b404c4bf
+type: Request
+parentId: fld_6602970428ca4443a58f9d4fcc04ed2f
+modified: 1659891043698
+created: 1655844706906
+url: "{{ _.provisioningLocalhost }}/v1alpha/accounts/tenant1/login"
+name: Google Login URL
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"authProviderType": "OAUTH_GOOGLE",
+    	"emailAddress": "{{ _.googleEmailAdress }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_e2549234689443479b85999361129ae2
+authentication: {}
+metaSortKey: -1652055688180.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

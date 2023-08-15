@@ -1,0 +1,30 @@
+_id: req_f90cbb895e1e4acdb645b1c8fae74802
+type: Request
+parentId: fld_1cff9554793a4b3099dd24e309078d50
+modified: 1670166057407
+created: 1617548044865
+url: "{{ _.baseUrl }}{{ _.serviceName }}/produceQueueEvent"
+name: produceQueueEvent
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"accountId": "{{ _.tenantId }}",
+    	"id": "4a13b66a-1ae4-425e-a97e-4ff2be76bbcf",
+    	"name": "default_queue"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1617548044865
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

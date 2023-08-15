@@ -1,0 +1,32 @@
+_id: req_b8db211601184aacae340f5a8b0f725a
+type: Request
+parentId: fld_6602970428ca4443a58f9d4fcc04ed2f
+modified: 1658139418549
+created: 1654618181435
+url: "{{ _.provisioningLocalhost }}/v1alpha/accounts/tenant1/imap"
+name: Google IMAP
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"hostName": "imap.gmail.com",
+    	"emailAddress": "{{ _.googleEmailAdress }}",
+    	"messagesNum": "1",
+    	"accessToken": "{{ _.googleToken }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ac3e54e9e8b84ce2b78d8f0e60cf24dd
+authentication: {}
+metaSortKey: -1652055688105.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

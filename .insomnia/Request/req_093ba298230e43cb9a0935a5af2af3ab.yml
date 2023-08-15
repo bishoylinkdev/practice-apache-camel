@@ -1,0 +1,47 @@
+_id: req_093ba298230e43cb9a0935a5af2af3ab
+type: Request
+parentId: fld_c55c9a9dbe65410ab53f49d3b186963e
+modified: 1618763746252
+created: 1615750681191
+url: "{{ _.baseUrl }}{{ _.serviceName }}/v1/accounts/{{ _.tenantId
+  }}/keywordRule/save"
+name: create keyword matching rule
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"ruleType": [
+    		"Subject",
+    		"Body"
+    	],
+    	"ruleConditions": [
+    		{
+    			"operation": null,
+    			"keywordGroup": "252f172b-de9c-4543-bdb2-06963ce56c5d"
+    		}
+    	],
+    	"body": false,
+    	"subject": false,
+    	"name": "email rule 1",
+    	"queueId": "test-queueId"
+    }
+parameters: []
+headers:
+  - name: contentType
+    value: application/x-www-form-urlencoded
+    description: ""
+    id: pair_762abb525ce544b48d4a7b92368088d1
+  - name: Content-Type
+    value: application/json
+    id: pair_84779e4bdb2b40bd80fcbd6f028a7b1b
+authentication: {}
+metaSortKey: -1615890701762.2188
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

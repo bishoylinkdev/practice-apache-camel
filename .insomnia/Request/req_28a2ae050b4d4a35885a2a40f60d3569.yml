@@ -1,0 +1,30 @@
+_id: req_28a2ae050b4d4a35885a2a40f60d3569
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1649444056236
+created: 1649442113002
+url: "{{ _.baseUrl }}{{ _.serviceName }}/seekToEnd"
+name: seekToEnd
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"consumerGroupId": "pre-routing-service",
+    	"topicNamesList": []
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2d0c543ab46d4c268ecc9554a814309d
+authentication: {}
+metaSortKey: -1619037511142
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,34 @@
+_id: req_85f9800b11a0494cbd3532c44e7b644b
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1653921204196
+created: 1619037511067
+url: "{{ baseUrl }}{{ serviceName }}/processedMessage"
+name: produce processedMessage
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tenantId": "{{ tenantId }}",
+    	"businessAccountName": "testemailclient12345@gmail.com",
+    	"emailSubjectText": "email subject",
+    	"emailBodyText": "sales tech",
+    	"messageIndex": "1",
+    	"engagementId": "b02b65d4-a2e1-11eb-bcbc-0242ac130001"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_700aeb77dea24905916c2acde281dff5
+authentication: {}
+metaSortKey: -1619037511067
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

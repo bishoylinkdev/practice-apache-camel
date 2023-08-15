@@ -1,0 +1,55 @@
+_id: req_654221f5e05743038578b6254c5cc855
+type: Request
+parentId: fld_5fb4ff2e3cb84892b06a51949cb6157d
+modified: 1660488896460
+created: 1656002797629
+url: "{{ _.provisioningRemote }}/v1alpha/accounts/{{ _.tenantId }}/mailboxes"
+name: create Google Mailbox
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"emailAddress": "{{ _.googleEmailAdress }}",
+    	"mailboxName": "google-mailbox",
+    	"maxEmailSize": 20,
+    	"saveOriginalEmail": false,
+    	"authenticationProvider": "OAUTH_GOOGLE",
+    	"inbound": {
+    		"protocol": "POP3",
+    		"imapProtocol": "IMAPS",
+    		"tlsType": "STARTTLS",
+    		"authenticationType": "XOAUTH2",
+    		"accountFolder": "Inbox",
+    		"deleteEmailFromServer": false,
+    		"emailServer": "imap.gmail.com",
+    		"port": 993,
+    		"connectionTimeout": 10
+    	},
+    	"outbound": {
+    		"saveOutboundEmail": true,
+    		"tlsType": "TLS",
+    		"authenticationType": "XOAUTH2",
+    		"emailServer": "smtp.gmail.com",
+    		"port": 587,
+    		"connectionTimeout": 10
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_64cf733a95bf4e97bd7caae543ebd8ad
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1654717874106.1406
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

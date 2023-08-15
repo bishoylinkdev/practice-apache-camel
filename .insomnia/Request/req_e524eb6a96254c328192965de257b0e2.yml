@@ -1,0 +1,47 @@
+_id: req_e524eb6a96254c328192965de257b0e2
+type: Request
+parentId: fld_c55c9a9dbe65410ab53f49d3b186963e
+modified: 1618765085746
+created: 1616055987882
+url: "{{ _.baseUrl }}{{ _.serviceName }}/v1/accounts/{{ _.tenantId
+  }}/keywordRule/update"
+name: update keyword matching rule
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": "b54cff6b-9839-48f6-b36b-61e98eae8402",
+    	"ruleType": [
+    		"Body"
+    	],
+    	"ruleConditions": [
+    		{
+    			"operation": null,
+    			"keywordGroup": "252f172b-de9c-4543-bdb2-06963ce56c5d"
+    		}
+    	],
+    	"body": false,
+    	"subject": false,
+    	"name": "updated support rule",
+    	"queueId": "updated"
+    }
+parameters: []
+headers:
+  - name: contentType
+    value: application/x-www-form-urlencoded
+    description: ""
+    id: pair_762abb525ce544b48d4a7b92368088d1
+  - name: Content-Type
+    value: application/json
+    id: pair_84779e4bdb2b40bd80fcbd6f028a7b1b
+authentication: {}
+metaSortKey: -1615890701712.2188
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

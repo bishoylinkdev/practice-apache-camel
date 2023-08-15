@@ -1,0 +1,61 @@
+_id: req_12fc7e6ddd6e47de810b02f1469e0040
+type: Request
+parentId: fld_d402e07ac8dd44158a4b3d68131a4631
+modified: 1666017991538
+created: 1615392915048
+url: "{{ _.baseUrl }}{{ _.serviceName
+  }}/api/digital/email-template/v1alpha/accounts/tenant1/templates"
+name: Create Template
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Email_Template_1",
+    	"type": "FILE",
+    	"description": "string",
+    	"format": "HTML",
+    	"body": "<div> test-body </div>",
+    	"language": "US",
+    	"isGlobal": true,
+    	"emailAccounts": [
+    		"sales@mycompany.com",
+    		"support@mycompany.com"
+    	],
+    	"participants": [
+    		{
+    			"participantType": "AGENT",
+    			"participantId": "string"
+    		}
+    	],
+    	"attachments": [],
+    	"matchingAttributes": [
+    		{
+    			"category": "Language",
+    			"value": "French"
+    		}
+    	],
+    	"additionalAttributes": [
+    		{
+    			"name": "customerDevice",
+    			"value": "Android"
+    		}
+    	],
+    	"subject": "RE:Follow on task",
+    	"isPublished": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6aa4b4b572034e3fb54c9e4eaa0ccb85
+authentication: {}
+metaSortKey: -1615392915048
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

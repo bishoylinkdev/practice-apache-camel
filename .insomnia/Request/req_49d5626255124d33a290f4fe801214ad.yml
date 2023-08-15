@@ -1,0 +1,32 @@
+_id: req_49d5626255124d33a290f4fe801214ad
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1653921211572
+created: 1619040087824
+url: "{{ _.baseUrl }}{{ _.serviceName }}/engagementPrerouted"
+name: produce engagementPrerouted
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tenantId": "{{ _.tenantId }}",
+    	"businessAccountName": "sales@avaya.com",
+    	"textMessage": "chat message",
+    	"engagementId": "b02b65d4-a2e1-11eb-bcbc-0242ac130001"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_fe26cb79ed08495da5e60844922140a0
+authentication: {}
+metaSortKey: -1617734228140.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

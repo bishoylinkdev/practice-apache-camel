@@ -1,0 +1,56 @@
+_id: req_42870e2c71a04a75a6c3d1d8663406c7
+type: Request
+parentId: fld_5fb4ff2e3cb84892b06a51949cb6157d
+modified: 1660464435926
+created: 1660124599963
+url: "{{ _.provisioningLocalhost }}/v1alpha/provision/accounts/{{ _.tenantId
+  }}/digitalAccounts/emailvalidate"
+name: Test Connection
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"authenticationProvider": "OAUTH_GOOGLE",
+    	"maxEmailSize": "20",
+    	"saveOriginalEmail": false,
+    	"inbound": {
+    		"protocol": "POP3",
+    		"imapProtocol": "IMAPS",
+    		"accountFolder": "Inbox",
+    		"deleteEmailFromServer": false,
+    		"emailServer": "imap.gmail.com",
+    		"port": "993",
+    		"tlsType": "TLS",
+    		"authenticationType": "XOAUTH2",
+    		"connectionTimeout": "10"
+    	},
+    	"outbound": {
+    		"saveOutboundEmail": false,
+    		"tlsType": "STARTTLS",
+    		"authenticationType": "XOAUTH2",
+    		"emailServer": "smtp.gmail.com",
+    		"port": "587",
+    		"connectionTimeout": "10"
+    	},
+    	"mailboxId": "4c686c68-947a-441f-894d-881e8ca48bf5",
+    	"emailAddress": "testemailclient12345@gmail.com",
+    	"mailboxName": "mailbox1",
+    	"password": "ya29.A0AVA9y1sVQJ8d6rz3Ggr4this4ANi7Ct5uoPSAQoT0Xg4WNzTJMBwDi-VtuJJYtZ87u1b68QJdzk6A2KjlwzCUZU67acyPJ7Td8y8N-Avb8Ht0aoUCMkC5cRYiZRb4xhm8vxmcQLOZvHsckq5n8FzEk2UmUJVaCgYKATASATASFQE65dr8hYawLaFEiu9tSQCle2hP4w0163",
+    	"isFeatureExist": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_caf40c5cf37140dd9e6022b0fe2df0b5
+authentication: {}
+metaSortKey: -1653065829526.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

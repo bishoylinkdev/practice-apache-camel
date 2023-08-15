@@ -1,0 +1,36 @@
+_id: req_a8800ac839664b4d8d0cf77adc8dbfc7
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1649442250272
+created: 1620122612784
+url: "{{ baseUrl }}/{{ serviceName }}v1/async/messages"
+name: Save Async Message
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"accountId": "TENANT",
+    	"header": {
+    		"subject": "test-subject1",
+    		"from": "sender",
+    		"to": [
+    			"receiver"
+    		]
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_249a011b1bcd4b07972ba41118e2267b
+authentication: {}
+metaSortKey: -1619037511117
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

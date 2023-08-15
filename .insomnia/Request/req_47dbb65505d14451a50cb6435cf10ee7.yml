@@ -1,0 +1,26 @@
+_id: req_47dbb65505d14451a50cb6435cf10ee7
+type: Request
+parentId: fld_6602970428ca4443a58f9d4fcc04ed2f
+modified: 1659943593778
+created: 1656856536585
+url: "{{ _.provisioningLocalhost }}/v1alpha/accounts/tenant1/refreshTokenScheduler"
+name: RefreshTokenScheduler
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: "{}"
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_270b45f91a7d4b0daccdb9cb03f576f6
+authentication: {}
+metaSortKey: -1652055687905.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

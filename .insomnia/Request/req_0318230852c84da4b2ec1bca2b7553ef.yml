@@ -1,0 +1,39 @@
+_id: req_0318230852c84da4b2ec1bca2b7553ef
+type: Request
+parentId: fld_0f9c1c510b4943a5a1d6605d7eca3c3b
+modified: 1618763687475
+created: 1618762090532
+url: "{{ _.baseUrl }}{{ _.serviceName }}/v1/accounts/{{ _.tenantId
+  }}/contextRules/update"
+name: Update Context Rule UI API
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": "dfe8bf7b-fb1d-44d2-8c53-55693dc5ad36",
+    	"contextConditions": [
+    		{
+    			"conditionKey": "conditionKey",
+    			"conditionValue": "conditionValue"
+    		}
+    	],
+    	"workFlow": "workFlow",
+    	"contextRuleName": "chat rule 1",
+    	"queueId": "updated"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_cd26bfdbca9f459eb7bf4382000b8e2f
+authentication: {}
+metaSortKey: -1615748679168.7188
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

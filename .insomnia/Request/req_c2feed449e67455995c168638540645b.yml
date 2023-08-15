@@ -1,0 +1,21 @@
+_id: req_c2feed449e67455995c168638540645b
+type: Request
+parentId: wrk_203eaf52675b46d9850f04f0032f40dc
+modified: 1692101988588
+created: 1691397199231
+url: https://tomcat-bishoy-adly-dev.apps.sandbox-m4.g2pi.p1.openshiftapps.com/home
+name: Producer Request
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1688868767947
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

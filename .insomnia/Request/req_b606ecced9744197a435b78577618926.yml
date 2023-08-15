@@ -1,0 +1,30 @@
+_id: req_b606ecced9744197a435b78577618926
+type: Request
+parentId: fld_6602970428ca4443a58f9d4fcc04ed2f
+modified: 1662659877703
+created: 1652086840226
+url: "{{ _.provisioningLocalhost }}/v1alpha/accounts/tenant1/login"
+name: Microsoft Login URL
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"authProviderType": "OAUTH_MICROSOFT",
+    	"emailAddress": "cloud_apps_dev@outlook.com"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_e2549234689443479b85999361129ae2
+authentication: {}
+metaSortKey: -1652086840226
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

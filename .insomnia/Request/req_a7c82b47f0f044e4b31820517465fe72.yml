@@ -1,0 +1,32 @@
+_id: req_a7c82b47f0f044e4b31820517465fe72
+type: Request
+parentId: fld_051fd6a3dfd743d1a852705a4f328aff
+modified: 1642186330344
+created: 1616100206714
+url: "{{ _.baseUrl }}{{ _.serviceName
+  }}/v1/accounts/tenant1/emailAccount/getByNameAndType/EMAIL/sales@avaya.com"
+name: Get Routing Config UI API
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Authorization
+    value: Bearer
+    description: ""
+    id: pair_d4cf61322ba34c4caafa88113cea7e09
+authentication:
+  type: oauth2
+  grantType: client_credentials
+  accessTokenUrl: "{{ _.keycloakTokenUrl }}"
+  clientId: "{{ _.keycloakClientId }}"
+  clientSecret: "{{ _.keycloakClientSecret }}"
+  disabled: false
+metaSortKey: -1616098574183
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,30 @@
+_id: req_6f9cef3b3a3141919e1504abeddc3a5d
+type: Request
+parentId: fld_6602970428ca4443a58f9d4fcc04ed2f
+modified: 1659874861487
+created: 1654534436839
+url: "{{ _.provisioningLocalhost }}/v1alpha/accounts/tenant1/token"
+name: Get Google access token
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"authProviderType": "OAUTH_GOOGLE",
+    	"emailAddress": "{{ _.googleEmailAdress }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6ae896069d62446ab51ec9515950209d
+authentication: {}
+metaSortKey: -1652055688155.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

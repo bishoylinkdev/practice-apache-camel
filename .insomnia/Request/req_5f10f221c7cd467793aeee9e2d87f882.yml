@@ -1,0 +1,39 @@
+_id: req_5f10f221c7cd467793aeee9e2d87f882
+type: Request
+parentId: wrk_203eaf52675b46d9850f04f0032f40dc
+modified: 1653308265052
+created: 1636637959648
+url: https://sbx-27.ixcc-sandbox.avayacloud.com/api/media-store/v1alpha/accounts/VYBHOD/media/f00f8dde-42f3-11ec-ba5f-75d5e3f3ebef
+name: UMR
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"participantType": "AGENT",
+    	"searchKeyword": "BLGosgpdhbQRmtc",
+    	"orderBy": "createdOn"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_e3fc0468e95d474eb28135d753357c77
+  - id: pair_265221302f9c44a38a12288a65210e33
+    name: TenantID
+    value: VCWLGP
+    description: ""
+    disabled: true
+authentication:
+  type: bearer
+  token: ""
+  disabled: false
+metaSortKey: -1633035458536.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

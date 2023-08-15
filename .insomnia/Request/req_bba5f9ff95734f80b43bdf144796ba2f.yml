@@ -1,0 +1,34 @@
+_id: req_bba5f9ff95734f80b43bdf144796ba2f
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1654253667783
+created: 1647949338935
+url: "{{ _.baseUrl }}{{ _.serviceName }}/customInboundEngagementCreated"
+name: produce customInboundEngagementCreated
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tenantId": "{{ _.tenantId }}",
+    	"textMessage": "chat message",
+    	"engagementId": "b02b65d4-a2e1-11eb-bcbc-0242ac130002",
+    	"engagementParameters": {
+    		"customerType": "test"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_993b490807c44b3c9ba116d5fe0eb1f9
+authentication: {}
+metaSortKey: -1617734228040.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

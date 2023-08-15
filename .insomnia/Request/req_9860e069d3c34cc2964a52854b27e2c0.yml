@@ -1,0 +1,30 @@
+_id: req_9860e069d3c34cc2964a52854b27e2c0
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1653921209880
+created: 1642507284033
+url: "{{ _.baseUrl }}{{ _.serviceName }}/outBoundEngagementCreated"
+name: produce outBoundEngagementCreated
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"topicName": "digital-engagement",
+    	"engagementId": "b02b65d4-a2e1-11eb-bcbc-0242ac130002"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_993b490807c44b3c9ba116d5fe0eb1f9
+authentication: {}
+metaSortKey: -1617827319777.875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,43 @@
+_id: req_701b55e48d684a849607a2b35438c79b
+type: Request
+parentId: fld_c55c9a9dbe65410ab53f49d3b186963e
+modified: 1632732010546
+created: 1632731551573
+url: "{{ _.baseUrl }}{{ _.serviceName
+  }}/api/digital/pre-routing-command-service/ui/accounts/ACCOID/keywordRule/get\
+  All"
+name: Search Keyword Matching Rule
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"pageSize": 10,
+    	"startIndex": 0,
+    	"sortOn": "",
+    	"sorton": "",
+    	"order": "",
+    	"criteria": [
+    		{
+    			"key": "name",
+    			"operator": "CONTAINS",
+    			"value": "rule",
+    			"discriminator": "",
+    			"predicate": null
+    		}
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1632731551623
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,39 @@
+_id: req_e1fd85bff738481ca6689802018fe81d
+type: Request
+parentId: fld_6602970428ca4443a58f9d4fcc04ed2f
+modified: 1659874858865
+created: 1655915222520
+url: "{{ _.provisioningLocalhost }}/oauth2/callback"
+name: redeem Code callback URL
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - id: pair_9ed819729934451e9ca6f71df2d54302
+      name: code
+      value: 4/0AdQt8qieCGZo_T3aUkaatBvbhenUHIoGcNnBtxbqt9XkeVbiDn341lkOFAQBCimwl5q1lQ
+      description: ""
+      disabled: false
+    - id: pair_63b7944b8e274fe38e85ee10ad67f476
+      name: state
+      value: a2489291-cb89-43bf-9879-75a8ad666493
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+    id: pair_bb4ebe36dd56472b9c6f4298d94fb945
+    disabled: false
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: true
+metaSortKey: -1652055687955.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

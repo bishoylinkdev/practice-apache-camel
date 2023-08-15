@@ -1,0 +1,39 @@
+_id: req_3b863051b8984978aafee98fd8021792
+type: Request
+parentId: fld_051fd6a3dfd743d1a852705a4f328aff
+modified: 1670174241535
+created: 1616098574233
+url: "{{ _.baseUrl }}{{ _.serviceName }}/v1/accounts/{{ _.tenantId
+  }}/accountConfiguration/save"
+name: Create Routing Config UI API
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"channelType": "EMAIL",
+    	"businessAccountName": "sales@avaya.com",
+    	"baseAttributes": [
+    		"service.support",
+    		"language.en"
+    	],
+    	"queueId": "ba19a679-22ef-4988-8f2e-d00671809810",
+    	"queuePriority": 8,
+    	"queueProficiencyRangeMin": 7,
+    	"queueProficiencyRangeMax": 3
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_cd26bfdbca9f459eb7bf4382000b8e2f
+authentication: {}
+metaSortKey: -1616098574233
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

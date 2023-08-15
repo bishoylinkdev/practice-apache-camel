@@ -1,0 +1,35 @@
+_id: req_b9d1108c6a8d4e888b60263205bef83e
+type: Request
+parentId: fld_ca81c8fa8378447f9cfef6977513d461
+modified: 1632730863901
+created: 1615994430285
+url: "{{ _.baseUrl }}{{ _.serviceName }}/v1/accounts/{{ _.tenantId
+  }}/keywordGroup/save"
+name: create keyword group
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "group1",
+    	"keywords": "word1"
+    }
+parameters: []
+headers:
+  - name: contentType
+    value: application/x-www-form-urlencoded
+    description: ""
+    id: pair_762abb525ce544b48d4a7b92368088d1
+  - name: Content-Type
+    value: application/json
+    id: pair_84779e4bdb2b40bd80fcbd6f028a7b1b
+authentication: {}
+metaSortKey: -1615748679157
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

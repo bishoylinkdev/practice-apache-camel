@@ -1,0 +1,51 @@
+_id: req_c9d4ad06f657407a88c3c74eb19481ad
+type: Request
+parentId: fld_d402e07ac8dd44158a4b3d68131a4631
+modified: 1662645611167
+created: 1615729200790
+url: "{{ _.baseUrl }}{{ _.serviceName }}/v1/accounts/tenant1/templates/getAll"
+name: Search Email Templates UI API
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"pageSize": 10,
+    	"startIndex": 0,
+    	"sortOn": "",
+    	"order": "",
+    	"criteria": [
+    		{
+    			"key": "name",
+    			"operator": "CONTAINS",
+    			"value": "",
+    			"discriminator": "",
+    			"predicate": null
+    		}
+    	]
+    }
+parameters:
+  - name: pageNumber
+    value: "2"
+    description: ""
+    id: pair_e754752dbf1948ee837aedef0f22ba23
+    disabled: true
+  - name: pageSize
+    value: "10"
+    description: ""
+    id: pair_fc52639055904e1ab6cdf299542a2a88
+    disabled: true
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3ce87c7bf3f84f82abedfad788a0bfcc
+authentication: {}
+metaSortKey: -1615392915085.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,45 @@
+_id: req_fb821a24702c451cba4bb8aab19434aa
+type: Request
+parentId: fld_d402e07ac8dd44158a4b3d68131a4631
+modified: 1632145540264
+created: 1632145271203
+url: "{{ _.baseUrl }}{{ _.serviceName
+  }}/api/digital/email-template/ui/accounts/UGPSXN/templates/create?templateTyp\
+  e=FILE"
+name: Create File Template
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - id: pair_ed81051c8425414a868126950da12e6c
+      name: name
+      value: test-template
+      description: ""
+    - id: pair_a434999760ab4706aa7ee5987d5d5239
+      name: description
+      value: test-description
+      description: ""
+    - id: pair_99693b74ae4b4606bfa0feb20128566c
+      name: body
+      value: https://sbx-21.ixcc-sandbox.avayacloud.com/services/ApplicationCenter/AdminPortal#//newurlTemplate
+      description: ""
+    - id: pair_cb9a10333d5947d484eb36c7944f5416
+      name: fileAttachment
+      value: ""
+      description: ""
+      type: file
+      fileName: C:\Users\Bishoy.Adly\Downloads\file-extensions\sample1.heic
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+authentication: {}
+metaSortKey: -1632145271203
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,53 @@
+_id: req_9b44471334934f9eb852f8afdf578822
+type: Request
+parentId: fld_36f12a8b18f04ba1a23fc0049d46f488
+modified: 1661260894027
+created: 1653554209918
+url: "{{ _.tokenEndpoint }}"
+name: Token Request - Refresh Token
+description: The POST request to exchange a refresh token for an access
+  token.  Be sure to replace the refresh_token with your own, that you recieved
+  along with your access_token.
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - value: refresh_token
+      name: grant_type
+      disabled: false
+      id: pair_64ce53301b544fc2bc7f51b3e467ce92
+    - value: "{{ _.clientId }}"
+      name: client_id
+      disabled: false
+      id: pair_8a4a33aac92843ce9b0db1ef27239a94
+    - value: "{{ _.clientSecret }}"
+      name: client_secret
+      disabled: false
+      id: pair_3427b00e87b440afb59f04426f89c14f
+    - value: "{{ _.redirectURL }}"
+      name: redirect_uri
+      disabled: false
+      id: pair_cb660c1b61454053be5eeb1745ef8ff2
+    - value: "{{ _.scope }}"
+      name: scope
+      disabled: false
+      id: pair_e813d549b3c1414aad979adae62a8a29
+    - id: pair_bb9dc585736442c5b27fa3a3d3031139
+      name: refresh_token
+      value: M.R3_BAY.-Cf9ezWYKJ4AWE5xs3BA8!yQz61O6Imp5o5b9XFoB97oH7iCsQ7jRxohZx0briJXV1O!WETShsHXuxz1ZjymA!ag*7J9hvcW4TDZHA1EdLFjm4fWKdWCna5iWvqUppaFoxf8NAelK04R*pmvnjnZcGVXpaKNUCYOpLBDlWKzXz4*5HkekGo6op3znJbwwRHWbzaZaGtgU6g3JrB0kAdr4oe33lauYQTzTkOm*PM2pwakm2axOk3j*AWzQzK*iCh7hnng2onouLHq5syQCVAY6k1t8!a4feN3srS4uJUQldW6ahhC5ou18NsmWKSRTOnMK5m14oS7vpOUns3XkBR13657tAYJkylJPI8Nacd5xzWgBVQ2Py!JmA6C91zv7UJHu97vmMQZA6Wq9KL2TDQcQGoNeRHeTpNGj*i0ZlwmXKh4GD4eU0*SO84s72wHC0ttyXQ$$
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-url-form-urlencoded
+    id: pair_487dd67b89414f598f37b1bfc8ae66fb
+    disabled: true
+authentication: {}
+metaSortKey: -1652024536306.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

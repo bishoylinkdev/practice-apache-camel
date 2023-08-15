@@ -1,0 +1,32 @@
+_id: req_45edf323ac224401ad134eac63279fe6
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1649589253905
+created: 1619037649461
+url: "{{ _.baseUrl }}{{ _.serviceName }}/inboundEngagementCreated"
+name: produce inboundEngagementCreated
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tenantId": "{{ _.tenantId }}",
+    	"businessAccountName": "sales@avaya.com",
+    	"textMessage": "chat message",
+    	"engagementId": "b02b65d4-a2e1-11eb-bcbc-0242ac130002"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_993b490807c44b3c9ba116d5fe0eb1f9
+authentication: {}
+metaSortKey: -1618292777966
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

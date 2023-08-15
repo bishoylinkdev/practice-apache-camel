@@ -1,0 +1,56 @@
+_id: req_57c0c59f818d450a962b8150e670f83c
+type: Request
+parentId: fld_5fb4ff2e3cb84892b06a51949cb6157d
+modified: 1661158899202
+created: 1656345470531
+url: "{{ _.provisioningLocalhost }}/v1alpha/accounts/{{ _.tenantId }}/mailboxes"
+name: create Default Mailbox
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"emailAddress": "{{ _.microsoftEmailAdress }}",
+    	"password": "SoftwareDev@CS",
+    	"mailboxName": "test-default-mailbox",
+    	"maxEmailSize": 20,
+    	"saveOriginalEmail": false,
+    	"authenticationProvider": "USERNAME_PASSWORD",
+    	"inbound": {
+    		"protocol": "IMAP",
+    		"imapProtocol": "IMAPS",
+    		"tlsType": "NONE",
+    		"authenticationType": "LOGIN",
+    		"accountFolder": "Inbox",
+    		"deleteEmailFromServer": false,
+    		"emailServer": "{{ _.microsoftSmtpServer }}",
+    		"port": 993,
+    		"connectionTimeout": 10
+    	},
+    	"outbound": {
+    		"saveOutboundEmail": true,
+    		"tlsType": "NONE",
+    		"authenticationType": "LOGIN",
+    		"emailServer": "{{ _.microsoftSmtpServer }}",
+    		"port": 587,
+    		"connectionTimeout": 10
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_64cf733a95bf4e97bd7caae543ebd8ad
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1656002797679
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
