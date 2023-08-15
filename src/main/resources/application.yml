@@ -11,5 +11,6 @@ camel:
       context-path: /*
   component:
     netty-http:
+      scheme: ${CAMEL_SERVER_SCHEME:http}
       host: ${CAMEL_SERVER_HOST:localhost}
       port: ${CAMEL_SERVER_PORT:9090}

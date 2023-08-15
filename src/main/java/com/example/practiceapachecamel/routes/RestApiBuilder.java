@@ -25,6 +25,7 @@ public class RestApiBuilder extends RouteBuilder {
         public Integer statusCode;
     }
 
+    @Value("${camel.component.netty-http.scheme}")
     private String scheme = "http";
 
     @Value("${camel.component.netty-http.host}")
