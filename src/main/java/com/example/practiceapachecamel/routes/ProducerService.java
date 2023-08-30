@@ -23,8 +23,7 @@ public class ProducerService {
         ProducerTemplate producerTemplate = new DefaultProducerTemplate(camelContext);
         producerTemplate.start();
         RequestBody requestBody = new RequestBody();
-        requestBody.name = "producerTemplate";
-        requestBody.age = 5;
+        requestBody.message = "producerTemplate";
         ObjectMapper objectMapper = new ObjectMapper();
         String response = producerTemplate.requestBody("rest:post:hello1",
                 objectMapper.writeValueAsString(requestBody), String.class);

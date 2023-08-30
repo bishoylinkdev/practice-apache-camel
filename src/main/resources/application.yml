@@ -12,7 +12,7 @@ camel:
   component:
     servlet:
       scheme: ${DESTINATION_SERVER_SCHEME:http}
-      host: ${DESTINATION_SERVER_HOST:localhost}
+      host: ${DESTINATION_SERVER_HOST:20.14.156.54}
       port: ${DESTINATION_SERVER_PORT:8080}
       sourceEndpointPath: ${SOURCE_ENDPOINT_PATH:story/task}
-      destinationEndpointPath: ${DESTINATION_ENDPOINT_PATH:swagger-ui/index.html}
+      destinationEndpointPath: ${DESTINATION_ENDPOINT_PATH:log/rest-log}

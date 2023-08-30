@@ -35,7 +35,7 @@ public class RestApiBuilder extends RouteBuilder {
     public void configure() throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
         ResponseBody response = new ResponseBody();
-        response.data = "apache camel response";
+        response.data = "Apache Camel Response";
         response.status = HttpStatus.OK.toString();
         response.statusCode = HttpStatus.OK.value();
         String sourceURI = String.format("rest:post:%s", sourceEndpointPath);
@@ -48,17 +48,15 @@ public class RestApiBuilder extends RouteBuilder {
                 .process(exchange -> {
                     String payload = exchange.getIn().getBody(String.class);
                     RequestBody requestBody = objectMapper.readValue(payload, RequestBody.class);
-                    log.info("RequestBody Data : {} {}", requestBody.name, requestBody.age);
-                    requestBody.name += "interceptor";
-                    requestBody.age = 28;
+                    log.info("RequestBody Data : {} {}", requestBody.logLevel, requestBody.message);
+                    requestBody.message = "Apache Camel Interceptor";
                     exchange.getIn().setBody(objectMapper.writeValueAsBytes(requestBody));
                 })
                 .log(String.format("Calling Rest Endpoint: %s", destinationUrl))
                 .to(destinationUrl)
                 .process(exchange -> {
                     String payload = exchange.getIn().getBody(String.class);
-                    ResponseBody responseBody = objectMapper.readValue(payload, ResponseBody.class);
-                    log.info("ResponseBody Data : {} {}", responseBody.status, responseBody.statusCode);
+                    log.info("ResponseBody Data : {}", payload);
                 });
 
         String source2URI = String.format("rest:post:%s", destinationEndpointPath);
