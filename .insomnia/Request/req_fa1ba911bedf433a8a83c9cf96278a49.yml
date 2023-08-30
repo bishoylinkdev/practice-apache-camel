@@ -1,0 +1,50 @@
+_id: req_fa1ba911bedf433a8a83c9cf96278a49
+type: Request
+parentId: fld_157e510f3cfa499e8bbfcb8e74507888
+modified: 1647167712956
+created: 1634588501470
+url: "{{ keycloakTokenUrl }}"
+name: Get Token Password Credentials
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - disabled: false
+      id: pair_413316bed9574c1fb2ac26a510655c4b
+      multiline: false
+      name: grant_type
+      type: text
+      value: password
+    - description: ""
+      disabled: false
+      id: pair_52f9fe3b2aa24750b52c17ef9260d16e
+      name: username
+      value: tempuser
+    - description: ""
+      disabled: false
+      id: pair_e9dcc1e00d3e4811af2fae196c737c18
+      name: password
+      value: tempuser
+    - id: pair_5f3e56d4d7b54a11886eb7762bccaa12
+      name: client_id
+      value: "{{ _.keycloakClientId }}"
+      description: ""
+    - id: pair_5723d6238f8d48a3a3f32d5c25fd3c2c
+      name: client_secret
+      value: "{{ _.keycloakClientSecret }}"
+      description: ""
+parameters: []
+headers:
+  - id: pair_e6b68ee1c1314926aa0c2137486876c5
+    name: Content-Type
+    value: application/x-www-form-urlencoded
+authentication: {}
+metaSortKey: -1616547982410
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

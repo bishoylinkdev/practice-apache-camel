@@ -1,0 +1,32 @@
+_id: req_29657ec0e4d44d2abee9e6b832becee1
+type: Request
+parentId: fld_6602970428ca4443a58f9d4fcc04ed2f
+modified: 1658139413096
+created: 1654618190985
+url: "{{ _.provisioningLocalhost }}/v1alpha/accounts/tenant1/pop3"
+name: Google POP3
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"hostName": "pop.gmail.com",
+    	"emailAddress": "{{ _.googleEmailAdress }}",
+    	"messagesNum": "1",
+    	"accessToken": "{{ _.googleToken }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_ac3e54e9e8b84ce2b78d8f0e60cf24dd
+authentication: {}
+metaSortKey: -1652055688055.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

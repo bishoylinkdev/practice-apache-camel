@@ -1,0 +1,54 @@
+_id: req_8dd932eef37641e6a7be567facfeb2de
+type: Request
+parentId: fld_36f12a8b18f04ba1a23fc0049d46f488
+modified: 1676392082621
+created: 1653554209930
+url: "{{ _.tokenEndpoint }}"
+name: Token Request - Auth Code
+description: The POST request to exchange an auth code for an access token.  Be
+  sure to replace the code with your own, that you recieved after signing in!
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - value: authorization_code
+      name: grant_type
+      disabled: false
+      id: pair_b9fedd0a983145008b27ec600a12003c
+    - value: "{{ _.clientId }}"
+      name: client_id
+      disabled: false
+      id: pair_1b3a3d47bd034917a48ef2141ba7fa64
+    - value: "{{ _.clientSecret }}"
+      name: client_secret
+      disabled: false
+      id: pair_277bc88491ed4d64acc804f542592a3d
+    - value: "{{ _.redirectURL }}"
+      name: redirect_uri
+      disabled: false
+      id: pair_02c03a16f3694a0d95420554adba46cc
+    - value: "{{ _.scope }}"
+      name: scope
+      disabled: false
+      id: pair_d54a9ec7618a430eb813f31e7fdca792
+      type: text
+      multiline: false
+    - id: pair_3d4c63bb3eb44e70bfb0c59d168e7faf
+      name: code
+      value: M.R3_SN1.f99e6ff0-0a4a-be6d-a1f9-1fcc0ca6b863
+      description: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-url-form-urlencoded
+    id: pair_badab9a5aad1480898b861b8cc9d195e
+    disabled: true
+authentication: {}
+metaSortKey: -1652024536307
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

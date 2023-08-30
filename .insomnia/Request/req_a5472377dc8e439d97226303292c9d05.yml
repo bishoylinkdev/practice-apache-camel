@@ -1,0 +1,25 @@
+_id: req_a5472377dc8e439d97226303292c9d05
+type: Request
+parentId: wrk_203eaf52675b46d9850f04f0032f40dc
+modified: 1675111163673
+created: 1667925910404
+url: https://localhost:9200/_cat/indices?v
+name: elasticsearch
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_9bd83308e5ef455d835740a23f176313
+    name: Authorization
+    value: ApiKey dFNWcEE0WUJubUFDQ2ZtRjRKSGY6V0lVNXExVlFRYW1XZno2SS1nR3hhUQ==
+    description: ""
+authentication: {}
+metaSortKey: -1667925919665
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

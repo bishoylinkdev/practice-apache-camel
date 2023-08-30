@@ -1,0 +1,31 @@
+_id: req_31459839b9e64d6e9d7b5098fcd5b1ea
+type: Request
+parentId: wrk_203eaf52675b46d9850f04f0032f40dc
+modified: 1686840358686
+created: 1686837912445
+url: https://dev-15.ixcc-sandbox.avayacloud.com/api/digital/pre-routing-command-service/ui/accounts/DRMAWG/keywordGroup/save
+name: Create KeywordGroup
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"name": "group1",
+    	"keywords": "pjvol,kffyk,wlqds,vpjwc,wdnkq,alsvc,zjxza,bgiha,icsif,lbose,nvnhc,iujjc,aqofu,iffxh,mqbhy,eutkw,riauk,hjwac,gnbvx,vwmqj,bundw,dwctu,jiloe,mvngq,vziqk,spgkp,ylyqr,yqlja,btzii,covnh,ovmxe,oaqyy,yibqk,poiag,djerr,yaaon,uozok,cztsx,wncwe,rlkya,kfpse,rkcny,anjkc,pbqkf,ijwme,wikne,ratss,brosk,chdei,gnoqo,ioesy,xxrbf,wiwej,xgcij,gqsms,satnf,lruxm,eualx,dtmsj,fsyca,ujnru,djggh,ccwzr,xtumu,yemyz,sqzug,xwiir,hiobt,ephwb,yklgu,gaxke,pninq,hkrji,rgyvr,rjbcj,mircq,mkvst,efqtf,cvtzk,uspaj,xubrg,yyuzc,hlspm,clvav,ousxo,hurgw,dtnom,vghla,yjoch,uauie,ryhnm,sdwoy,pvqry,ltkdc,aazrf,stlqd,uxirr,ldlzl,imtvq,vjbac,hbmqz,vuans,yvqhq,qxirg,ushlq,jjfmd,fuhxi,zauet,pyxdm,aogtk,dylen,zlqvx,qqfvs,odlpn,eginv,lnhps,zwpvl,pzhej,qpkqj,jtpid,wxoiy,ymuel,qjbcc,mhest,iyqhz,vbxfh,wnzks,pobbm,znxrd,oasvs,kvuvg,gsrqr,fiska,csjpz,ffsrs,migfu,gxdnk,pdouo,ippuw,gkcyw,mfovq,veeoz,nqyfq,ivxzs,qtfsj,dzorc,nifdk,anoag,gigrt,gaysm,upgop,gycva,eutpj,mhyob,kupvv,gcrkj,kqoad,cohni,gngib,mhvam,bnhij,qdvrm,nqwbf,modzu,kolhs,gpaxy,qyobe,klgzo,nrlsh,cfdqh,jvzcz,iphll,rlsoq,kkgxs,qolyu,oenyy,dtaqm,rvref,wljer,wvlsb,tntfb,tlnac,blrmy,vhngz,upueh,catcx,nlxwg,lnroe,lvkxb,laadw,evrio,mztjw,bylri,tfyvh,tynwr,apzxn,arttd,tfezc,uioya,gmnvd,owvyy,eecqy,arfrf,xsadp,bpjww,jcint,txlfo,kfgcb,lsnui,fmlzr,cgqit,wjiyq,kykdz,iubdn,thheu,apzmp,otkyg,wovaj,ubeme,zrizm,uhjpc,qdlcu,lvwgj,trskz,paidl,ahisc,nsakp,hobfv,vzfeh,cfqvr,oormd,ypiwz,wmoag,avpym,xlzbv,cifov,xeemn,ubymn,nixzw,inbyx,nmcbx,ahnnf,hshds,uiftg,mpjfc,tzcsa,lukrx,bjhlo,skoom,jzylk,xhohe,jeyru,raanx,plzmb,wjidv,tgnce,fucbn,lozyp,wioeq,fvpph,kcgro,gxxpd,gpbwz,avput,gxihw,xuxbt,loggd,ubiqn,rnkwn,fahep,mypwc,vcbvf,kvhir,ikmyb,jznoo,ifzou,igljn,vhtiy,esqkx,cjueu,fmddh,nqnmx,nqmxy,cmufh,myier,liebt,enbbm,lrisu,wdris,zjlqw,ebofp,qnbws,evmya,wfqpb,johiw,qslqy,bvknv,jdghz,hsyrz,yvhzy,osqqm,fpobk,mehcu,uzmnw,ororg,qdpgo,qkhmh,lotjr,qyafb,fzcpp,xdmjm,lfvwa,vubep,lnyhi,ghkcd,wjsho,lherd,kikgk,wczrr,xjlbn,nqnyj,dcsjs,pxmoj,thdbj,bkckt,gqmlv,uancp,rdjnl,qxhpb,jzxdo,swlbu,rhzla,ygamw,pnolu,udqqa,qjpim,svbya,zqinh,wdvlv,ogjds,uhzus,cybac,fbnme,mkxng,soiro,tqtcb,zssym,htqjn,bszzm,jylfu,ljlim,rqyxb,invjt,uebkp,otrws,hgjtb,ioqxv,bhdzc,wdqbu,rphzs,vqstm,uolhj,qqcwb,ubxok,vicfa,imisx,alnvs,omabd,mbuxj,dkgbq,ytoxp,cpczd,mhgfm,ljpsq,gjcpz,lxhyv,wtrui,hlmep,fyxyw,avbdw,hnuai,axbzt,dxcqz,azeub,ppkun,vlqqc,rwquw,qfvgj,hehdg,tjpvu,zwkil,ghhwd,jaunc,isbjq,vjfcg,psabw,utiab,sbjfj,magde,vbyvm,yzrrw,eteyt,hckwj,wkzjd,acjgy,yjuoa,qrgsa,oznbt,cmrfk,zuicv,irssx,lenfh,ukrbc,qgiks,aycwo,lngej,puwhv,ztlaq,dcojw,hcqxl,yqjvi,hjebj,scqhr,mfciw,giddo,hccnx,wfldv,lxajo,xusve,etykl,ccgnt,hxyls,fpjaa,gqzjo,kjvcg,icgcz,orece,sfoju,rglwo,iwwag,qizaa,ochpv,zuztb,ieayy,infqx,oskle,pfryk,hpakr,zrosj,kuidk,leywc,ucirf,rbdxn,uzedn,nynuu,fsmlg,nmqar,mqjvi,bqgmr,oktuz,xxtxf,pzoko,vksaf,ownga,kkemn,mteet,zahlm,zraad,nkhre,ruwlb,nsijv,yotal,kzosv,aozxw,jzwqu,cjywx,etyvk,awrij,agbhk,tyjmu,glnsd,eiqnh,rmwen,yfzyj,wujco,abdlq,fmcsp,dmxdf,nxjvc,szpdh,npiwo,sduwm,qvmym,nsxuf,rftll,inlca,lxuba,ltmrx,duyqt,djgon,abc,def,xyz,hij,klm,nop,qrs,tuv,wxy"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIxWnoyc1B4VHBzeThtc0pkU3dRb3A3aHdDcWNCZ0FnMW1zTjZRczVTVXFNIn0.eyJleHAiOjE2ODY4NDA0NzcsImlhdCI6MTY4NjgzOTU3NywiYXV0aF90aW1lIjoxNjg2ODM3ODMyLCJqdGkiOiI4OGEzYmJhMy03YTc5LTQwNWQtOGNiZi0xZmExNjFjYzc2MDMiLCJpc3MiOiJodHRwczovL2Rldi0xNS5peGNjLXNhbmRib3guYXZheWFjbG91ZC5jb20vYXV0aC9yZWFsbXMvRFJNQVdHIiwiYXVkIjpbImFjY291bnQiLCJ1d2YiXSwic3ViIjoiYWRtaW5AcmVkaXMuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoidXdmIiwic2Vzc2lvbl9zdGF0ZSI6Ijk4ODYxNGQzLTQ5NWEtNGFkMS1hMjkzLWE5ODYyNzdmNTZjYSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1kcm1hd2ciLCJXb3Jrc3BhY2VzIEFkbWluIFdpZGdldHMgQWRtaW5pc3RyYXRvciIsIkFkbWluaXN0cmF0b3IiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIiwidXNlciJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIGVtYWlsIHByb2ZpbGUiLCJzaWQiOiI5ODg2MTRkMy00OTVhLTRhZDEtYTI5My1hOTg2Mjc3ZjU2Y2EiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaWRwIjoiZmxleCIsIm5hbWUiOiJhZG1pbiByZWRpcyIsInRlbmFudElkIjoiRFJNQVdHIiwiZ3JvdXBzIjpbIi9EUk1BV0ciXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW5AcmVkaXMuY29tIiwidXNlclVVSUQiOiJmNDU3Y2QxMC0yMzgyLTQ1MjYtYmQxMC1lZDMyMmRmMzhjYmQiLCJnaXZlbl9uYW1lIjoiYWRtaW4iLCJmYW1pbHlfbmFtZSI6InJlZGlzIn0.BKg4k0ZriKNVz2MzX6aeX48OM3VXP50nNzs0LVLfif7fzi4d4pcC0Cq1Ts__j9kdPWQ4iOE1bwcgYagdqLOFcxkpQs_ux78QhdIhEzYcLlG24FZvhkIKFoLi6qNVn7QBJRb_Y15Y2dGjJohe9o505DGjRRrLU90mBOYSN1vK1tfyoeG4_gx63bMuGZDXBVPVsAqOhG6UfnI2DBaGBbE41EswSQUjoXsXKTLZwwkoJPCBTs7Wh-emc1YrW1vOkSCSFMEYQ2tRr0FigKipTdEWMene61BaDGgNukUJaQKHhQwq2iV0jimbrvMgwwkICgsl9aY6gjtIhjqx1uZ3kWE0dw
+metaSortKey: -1686837912445
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

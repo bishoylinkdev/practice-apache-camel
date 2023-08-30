@@ -1,0 +1,35 @@
+_id: env_d5ea306b5dd544f1862225ad6a81d95c
+type: Environment
+parentId: env_d4b65d8ed14c018386e1ab932a30a50cfc391877
+modified: 1654678491186
+created: 1617525242209
+name: Local Server
+data:
+  baseUrl: "{{ protocol }}://{{ hostName }}:{{ port }}"
+  keycloakTokenUrl: "{{ protocol }}://{{ hostName }}:{{ port }}/auth/realms/{{
+    tenantId }}/protocol/openid-connect/token"
+  keycloakAuthUrl: "{{ protocol }}://{{ hostName }}:{{ port }}/auth/"
+  protocol: http
+  hostName: localhost
+  port: "8080"
+  serviceName: ""
+  tenantId: ECXTNC
+  keycloakClientId: bdd
+  keycloakClientSecret: bdd_client_secret
+  token: ""
+dataPropertyOrder:
+  "&":
+    - baseUrl
+    - keycloakTokenUrl
+    - keycloakAuthUrl
+    - protocol
+    - hostName
+    - port
+    - serviceName
+    - tenantId
+    - keycloakClientId
+    - keycloakClientSecret
+    - token
+color: "#30bcd5"
+isPrivate: false
+metaSortKey: 1617525242209

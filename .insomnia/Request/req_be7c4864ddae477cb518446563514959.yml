@@ -1,0 +1,29 @@
+_id: req_be7c4864ddae477cb518446563514959
+type: Request
+parentId: wrk_203eaf52675b46d9850f04f0032f40dc
+modified: 1683812381479
+created: 1679909136227
+url: https://localhost:9090/actuator/prometheus
+name: temp
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"configuredLevel": "DEBUG"
+    }
+parameters: []
+headers:
+  - name: content-type
+    value: application/json
+    id: pair_08cd0f754faf461fbcea973cfba9d13d
+authentication: {}
+metaSortKey: -1667925919640
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

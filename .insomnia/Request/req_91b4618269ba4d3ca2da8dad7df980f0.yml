@@ -1,0 +1,32 @@
+_id: req_91b4618269ba4d3ca2da8dad7df980f0
+type: Request
+parentId: fld_5fb4ff2e3cb84892b06a51949cb6157d
+modified: 1660550866801
+created: 1656262025856
+url: "{{ _.provisioningRemote }}/v1alpha/accounts/{{ _.tenantId }}/mailboxes/{{
+  _.mailboxId }}:enable"
+name: Enable Mailbox
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_64cf733a95bf4e97bd7caae543ebd8ad
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1654411939934.0312
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

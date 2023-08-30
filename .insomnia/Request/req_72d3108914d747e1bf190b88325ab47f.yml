@@ -1,0 +1,33 @@
+_id: req_72d3108914d747e1bf190b88325ab47f
+type: Request
+parentId: fld_0fbde2c8e97c49aa903e011be8230b1c
+modified: 1654253661286
+created: 1616419880847
+url: "{{ _.baseUrl }}{{ _.serviceName }}/produce"
+name: Processed Message Producer
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"messageIndex": "1",
+    	"tenantId": "{{ _.tenantId }}",
+    	"businessAccountName": "nonexistingaccount@gmail.com",
+    	"emailSubjectText": "HelloAgent Sale voucher percent",
+    	"emailBodyText": "Sale voucher percent"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_1b5f41e1152741d0bf1b9cba8734bec9
+authentication: {}
+metaSortKey: -1612418717509.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

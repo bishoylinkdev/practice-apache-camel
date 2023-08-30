@@ -1,0 +1,30 @@
+_id: req_83fbbb7de7b448e19cee22ddcc0c3163
+type: Request
+parentId: fld_6602970428ca4443a58f9d4fcc04ed2f
+modified: 1663226098324
+created: 1653319063853
+url: "{{ _.provisioningLocalhost }}/v1alpha/accounts/tenant1/token"
+name: Get Microsoft access token
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"authProviderType": "OAUTH_MICROSOFT",
+    	"emailAddress": "{{ _.microsoftEmailAdress }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_1ab71ae8a36b4cd19ccf9ce5d5ffdfcf
+authentication: {}
+metaSortKey: -1652071264247
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

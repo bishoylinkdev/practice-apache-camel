@@ -1,0 +1,29 @@
+_id: req_e54e9ced8f944046a5c9b8f4c0234553
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1649572606910
+created: 1649238971398
+url: "{{ _.baseUrl }}{{ _.serviceName }}/deleteConsumerGroup"
+name: deleteConsumerGroup
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"consumerGroupId": "pre-routing-service"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2d0c543ab46d4c268ecc9554a814309d
+authentication: {}
+metaSortKey: -1619037511167
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

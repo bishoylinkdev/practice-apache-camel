@@ -1,0 +1,11 @@
+_id: fld_36f12a8b18f04ba1a23fc0049d46f488
+type: RequestGroup
+parentId: wrk_203eaf52675b46d9850f04f0032f40dc
+modified: 1655110437982
+created: 1653554209913
+name: OAuth 2.0 Authorization Code Flow Native APIs
+description: We recommend the OAuth 2.0 code flow for natively installed
+  applications, such as desktop and mobile apps.
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1652104768765.8125

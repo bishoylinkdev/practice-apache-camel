@@ -1,0 +1,25 @@
+_id: req_f3bfe3af0be747e180f37f5e018a3be7
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1623423262303
+created: 1622115859632
+url: "{{ baseUrl }}/{{ serviceName }}asyncmessages"
+name: Delete All Stored Async Messages
+description: ""
+method: DELETE
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1619037511079.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,25 @@
+_id: req_cef65ebedb7147da854a430336669b2d
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1623423246498
+created: 1622124148379
+url: "{{ baseUrl }}/{{ serviceName }}asyncmessages/count"
+name: Count Saved Async Messages
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1619037511085.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

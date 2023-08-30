@@ -1,0 +1,50 @@
+_id: req_87546cb7b40f4b12a0f0ddbc3b0f7152
+type: Request
+parentId: fld_ca81c8fa8378447f9cfef6977513d461
+modified: 1670174220269
+created: 1632730887244
+url: "{{ _.baseUrl }}{{ _.serviceName
+  }}/api/digital/pre-routing-command-service/ui/accounts/ACCOID/keywordGroup/ge\
+  tAll"
+name: Search Keyword Groups
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"pageSize": 10,
+    	"startIndex": 0,
+    	"sortOn": "",
+    	"sorton": "",
+    	"order": "",
+    	"criteria": [
+    		{
+    			"key": "name",
+    			"operator": "CONTAINS",
+    			"value": "group",
+    			"discriminator": "",
+    			"predicate": null
+    		},
+    		{
+    			"key": "keywords",
+    			"operator": "CONTAINS",
+    			"value": "word1",
+    			"discriminator": "AND",
+    			"predicate": "AND"
+    		}
+    	]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1632730887244
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

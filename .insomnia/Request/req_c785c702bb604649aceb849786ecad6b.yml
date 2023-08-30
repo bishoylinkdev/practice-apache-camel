@@ -1,0 +1,29 @@
+_id: req_c785c702bb604649aceb849786ecad6b
+type: Request
+parentId: wrk_203eaf52675b46d9850f04f0032f40dc
+modified: 1672843303800
+created: 1645623539938
+url: https://localhost:9090/actuator/loggers/com.avaya.csp
+name: Log Level
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"configuredLevel": "DEBUG"
+    }
+parameters: []
+headers:
+  - name: content-type
+    value: application/json
+    id: pair_08cd0f754faf461fbcea973cfba9d13d
+authentication: {}
+metaSortKey: -1642529997425.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

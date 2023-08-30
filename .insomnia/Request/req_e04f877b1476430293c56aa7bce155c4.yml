@@ -1,0 +1,54 @@
+_id: req_e04f877b1476430293c56aa7bce155c4
+type: Request
+parentId: fld_684f1bd81939413698d5875f699652b4
+modified: 1672676627545
+created: 1660819925741
+url: https://localhost:8080/v1alpha/email/accounts
+name: IMAP Update Account
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"providerId": 8,
+    	"eventType": "UPDATE",
+    	"payload": {
+    		"authenticationType": "XOAUTH2",
+    		"tlsType": "TLS",
+    		"acctname": "EmailAccount -IMAP - Micro",
+    		"emailAddress": "test-imapavaya2@hotmail.com",
+    		"password": "invalid_token",
+    		"emailServer": "outlook.office365.com",
+    		"port": 993,
+    		"connectionTimeout": 10,
+    		"accountFolder": "Inbox",
+    		"maxEmailSize": 10,
+    		"accountId": "SGBERZ",
+    		"saveOriginalEmail": "false",
+    		"deleteEmailFromServer": "false",
+    		"imapProtocol": "imaps"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_144ec673cc8943ec95e92aa43d7bfb7b
+  - name: TENANT-ID
+    value: CFDEZJ
+    description: ""
+    id: pair_416be25b7ef14d53b26cc121d72c1d3e
+    disabled: true
+authentication:
+  type: bearer
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJDajRPaGc3SWd6dW1kbkFFeEZRSENTMFczLTdpZ1hxWWdZcEI0WUhOdnF3In0.eyJleHAiOjE2NzI2OTQ1ODksImlhdCI6MTY3MjY3NjU4OSwianRpIjoiZjdiMDAzMmYtZDM0ZS00MWI5LTlhMDUtYzFjODEyMWI1YmZhIiwiaXNzIjoiaHR0cHM6Ly9xYS5peGNjLXNhbmRib3guYXZheWFjbG91ZC5jb20vYXV0aC9yZWFsbXMvVEhTTktDIiwiYXVkIjpbImFjY291bnQiLCJiZGQiXSwic3ViIjoic2VydmljZS1hY2NvdW50LWJkZCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImJkZCIsInNlc3Npb25fc3RhdGUiOiIyZjZkMzY0Zi02NjAzLTQyY2ItODAzMS04OGJlNWQ0NDE2Y2QiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3QqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXRoc25rYyIsIm9mZmxpbmVfYWNjZXNzIiwidHJ1c3RlZF9jbGllbnQiLCJ1bWFfYXV0aG9yaXphdGlvbiIsInVzZXIiXX0sInJlc291cmNlX2FjY2VzcyI6eyJiZGQiOnsicm9sZXMiOlsidW1hX3Byb3RlY3Rpb24iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SWQiOiJiZGQiLCJjbGllbnRIb3N0IjoiMTAuMTY0LjguODciLCJpZHAiOiJmbGV4IiwidGVuYW50SWQiOiJUSFNOS0MiLCJncm91cHMiOltdLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtYmRkIiwiY2xpZW50QWRkcmVzcyI6IjEwLjE2NC44Ljg3In0.SmCucOvbtO_wu0j7-NSMhW5LcMQrpdVF18S5eptUFd-zt49GKmKRmKQMDRy2Gx4-dZIWh198b-yAHJ9aOPqvUobywkPXUUggHwVqdizo0g7fbgZ45V350a5vw6idQJwyOKlkyV2mN5rr-tZ6JsadZ9dl3qnsIdc5YnCA-EuFaauQT8_IsfqfE9mrJJsfZkl6_zJ19cMPAqx9SSo6_fj96TRyz6_6PbasnoVBR_zGty8nGdJadVdiFUGSxaYG7tzN1MkvgQNMd-R18P5MpK_AuOH-9XrzTuRrOo8a0DwkiLA2Emrwe00jbzp2cVAUmRjrVARxOwn4rYu1k50WC1g44A
+  disabled: false
+metaSortKey: -1617049253848.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

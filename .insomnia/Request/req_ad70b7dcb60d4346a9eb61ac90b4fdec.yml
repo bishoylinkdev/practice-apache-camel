@@ -1,0 +1,26 @@
+_id: req_ad70b7dcb60d4346a9eb61ac90b4fdec
+type: Request
+parentId: fld_267328001f9d491f8d519bff2fbcec15
+modified: 1623423235379
+created: 1622115775877
+url: "{{ baseUrl }}/{{ serviceName
+  }}asyncmessages/subject/IQniEBYtIFmU1ifVKBOPU5YA7xZwiwMLug89fYE9QQ774npZx7"
+name: Get Async Message
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1619037511092
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

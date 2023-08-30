@@ -1,0 +1,54 @@
+_id: req_86ecc7bdbd594f3a91d4d3357c752ca3
+type: Request
+parentId: fld_684f1bd81939413698d5875f699652b4
+modified: 1670164455498
+created: 1660824936611
+url: "{{ _.labRemoteURl }}/smtp-connector/v1alpha/email/accounts"
+name: POP3 Update Account
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"providerId": 8,
+    	"eventType": "UPDATE",
+    	"payload": {
+    		"authenticationType": "XOAUTH2",
+    		"tlsType": "TLS",
+    		"acctname": "EmailAccount -IMAP - Micro",
+    		"emailAddress": "test-imapavaya2@hotmail.com",
+    		"password": "TEST",
+    		"emailServer": "outlook.office365.com",
+    		"port": 993,
+    		"connectionTimeout": 120,
+    		"accountFolder": "Inbox",
+    		"maxEmailSize": 10,
+    		"accountId": "SGBERZ",
+    		"saveOriginalEmail": "false",
+    		"deleteEmailFromServer": "false",
+    		"imapProtocol": "imaps"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_144ec673cc8943ec95e92aa43d7bfb7b
+  - name: TENANT-ID
+    value: CFDEZJ
+    description: ""
+    id: pair_416be25b7ef14d53b26cc121d72c1d3e
+    disabled: true
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1617049253836
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

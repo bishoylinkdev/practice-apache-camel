@@ -1,0 +1,45 @@
+_id: req_45423e4644894c8e82296b212a441c8a
+type: Request
+parentId: fld_0f9c1c510b4943a5a1d6605d7eca3c3b
+modified: 1670174264090
+created: 1616316650566
+url: "{{ _.baseUrl }}{{ _.serviceName }}/ui/accounts/{{ _.tenantId
+  }}/contextRules/create"
+name: Create Context Rule UI API
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"queuePriority": 5,
+    	"contextConditions": [
+    		{
+    			"conditionKey": "   customerType   ",
+    			"conditionValue": "   support   "
+    		}
+    	],
+    	"id": "d4d1d3c9-f45d-42cc-b243-0c4fa898f676",
+    	"contextRuleName": "Support Rule",
+    	"assignedAttributes": [
+    		"Language.English"
+    	],
+    	"workFlow": "",
+    	"queueId": "985b9b62-1036-412c-968b-ff35b81b66f5",
+    	"queueProficiencyRangeMin": 5,
+    	"queueProficiencyRangeMax": 1
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_cd26bfdbca9f459eb7bf4382000b8e2f
+authentication: {}
+metaSortKey: -1615748679180.4375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

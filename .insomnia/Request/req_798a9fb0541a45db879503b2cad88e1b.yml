@@ -1,0 +1,32 @@
+_id: req_798a9fb0541a45db879503b2cad88e1b
+type: Request
+parentId: fld_c55c9a9dbe65410ab53f49d3b186963e
+modified: 1616316925356
+created: 1616096343216
+url: http://localhost:8080/v1/accounts/tenant1/keywordRule/getById/a94dd840-2e9d-4b03-9353-8513d8cad39a
+name: get keyword matching rule by Id
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_84779e4bdb2b40bd80fcbd6f028a7b1b
+  - name: Authorization
+    value: Bearer
+    description: ""
+    id: pair_c72ba152d76445b28227717160d810b2
+authentication: {}
+metaSortKey: -1615890701662.2188
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

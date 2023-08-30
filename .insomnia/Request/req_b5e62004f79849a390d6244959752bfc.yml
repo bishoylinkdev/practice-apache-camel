@@ -1,0 +1,32 @@
+_id: req_b5e62004f79849a390d6244959752bfc
+type: Request
+parentId: fld_5fb4ff2e3cb84892b06a51949cb6157d
+modified: 1660124620291
+created: 1656419289159
+url: "{{ _.provisioningRemote }}/v1alpha/accounts/{{ _.tenantId }}/mailboxes/{{
+  _.mailboxId }}/token"
+name: Revoke Mailbox Token
+description: ""
+method: DELETE
+body:
+  mimeType: application/json
+  text: |-
+    {
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_64cf733a95bf4e97bd7caae543ebd8ad
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
+  disabled: false
+metaSortKey: -1653065829576.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

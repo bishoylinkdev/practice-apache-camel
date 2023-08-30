@@ -1,0 +1,34 @@
+_id: req_3469de4f63b14c7b97bc7ae542528947
+type: Request
+parentId: fld_1cff9554793a4b3099dd24e309078d50
+modified: 1623829599474
+created: 1617554038858
+url: "{{ _.baseUrl }}{{ _.serviceName
+  }}/api/digital/pre-routing-command-service/v1alpha/{{ _.tenantId
+  }}/produceQueueDeletedEvent"
+name: produceQueueDeletedEvent
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"id": "1b154263-c20d-48c7-94ea-2771949ba8a8",
+    	"accountId": "{{ _.tenantId }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  token: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJlNDJPTEIwSXBpTnU1UXl0aVVXdWJZbUYwOHJFU29YNHNyVXREbUkxZjVBIn0.eyJleHAiOjE2MTc2MDkyMzUsImlhdCI6MTYxNzYwODMzNSwiYXV0aF90aW1lIjoxNjE2NDE1NjQ5LCJqdGkiOiI4MDFiMzk5NC0xZmRkLTQ1YzUtYjAwZC0xMTEwNjM0YjFmZWIiLCJpc3MiOiJodHRwczovL3NieC05Lml4Y2Mtc2FuZGJveC5hdmF5YWNsb3VkLmNvbS9hdXRoL3JlYWxtcy9YUkRQVUEiLCJhdWQiOlsiYWNjb3VudCIsInV3ZiJdLCJzdWIiOiJhZG1pbkBxdWUuY29tIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoidXdmIiwic2Vzc2lvbl9zdGF0ZSI6IjEwYjE2NGY4LTBiOTAtNDBjYS1hYmFlLTI2YmE0MzdlZjMxYSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiQWRtaW5pc3RyYXRvciIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJ1c2VyIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgb2ZmbGluZV9hY2Nlc3MgcHJvZmlsZSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJpZHAiOiJmbGV4IiwibmFtZSI6ImFkbWluIHF1ZSIsInRlbmFudElkIjoiWFJEUFVBIiwiZ3JvdXBzIjpbIi9YUkRQVUEiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW5AcXVlLmNvbSIsInVzZXJVVUlEIjoiNDcyZTliMGYtNjQwNi00MTBlLWJkZTEtZmI0YjBkMDg2NTYxIiwiZ2l2ZW5fbmFtZSI6ImFkbWluIiwiZmFtaWx5X25hbWUiOiJxdWUifQ.mPN5Vu4j7Iors8-PJVoMP4iNAyQOxevsF9lENSZpVrGrP8j-PtAri9CAc3p3-C2NKSuUzJXn1WYG0cK_qtAtInoxhQ6tGSX-mg5206b0Q2UHv4_q3JlmdE2uukQ-FDoIwaRD_kZb5jq59HtvcF_oH3YB_6x0oNVbUIMUXC393To4j3EDI1J38lpMvvnGuuiO4ufvWLDEDj-72dL-d0hFnJlSi7QIvznYbXdlxiL5T-vvAG0Z4q813yUZ2a9-aObxTYkgp0Q90xKHBrznh2BEDuCcR5KhzkytcjmjkvCuAYehXwu1xu_SL4Sd7N5RGg5T-N36rnNwYN-M2USaLBkDYQ
+  disabled: true
+metaSortKey: -1617324581012.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
