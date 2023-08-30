@@ -10,7 +10,9 @@ camel:
     mapping:
       context-path: /*
   component:
-    netty-http:
-      scheme: ${CAMEL_SERVER_SCHEME:http}
-      host: ${CAMEL_SERVER_HOST:localhost}
-      port: ${CAMEL_SERVER_PORT:9090}
+    servlet:
+      scheme: ${DESTINATION_SERVER_SCHEME:http}
+      host: ${DESTINATION_SERVER_HOST:localhost}
+      port: ${DESTINATION_SERVER_PORT:8080}
+      sourceEndpointPath: ${SOURCE_ENDPOINT_PATH:story/task}
+      destinationEndpointPath: ${DESTINATION_ENDPOINT_PATH:swagger-ui/index.html}

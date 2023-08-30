@@ -22,13 +22,13 @@ public class ProducerService {
     public void process() {
         ProducerTemplate producerTemplate = new DefaultProducerTemplate(camelContext);
         producerTemplate.start();
-        RestApiBuilder.RequestBody requestBody = new RestApiBuilder.RequestBody();
+        RequestBody requestBody = new RequestBody();
         requestBody.name = "producerTemplate";
         requestBody.age = 5;
         ObjectMapper objectMapper = new ObjectMapper();
         String response = producerTemplate.requestBody("rest:post:hello1",
                 objectMapper.writeValueAsString(requestBody), String.class);
-        RestApiBuilder.ResponseBody responseBody = objectMapper.readValue(response, RestApiBuilder.ResponseBody.class);
+        ResponseBody responseBody = objectMapper.readValue(response, ResponseBody.class);
         producerTemplate.stop();
     }
 }

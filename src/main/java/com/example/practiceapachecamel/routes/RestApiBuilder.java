@@ -10,29 +10,27 @@ import org.apache.http.entity.ContentType;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Component
+@Service
 public class RestApiBuilder extends RouteBuilder {
 
-    public static class RequestBody {
-        public String name;
-        public Integer age;
-    }
-
-    public static class ResponseBody {
-        public String data;
-        public String status;
-        public Integer statusCode;
-    }
-
-    @Value("${camel.component.netty-http.scheme}")
+    @Value("${camel.component.servlet.scheme}")
     private String scheme = "http";
 
-    @Value("${camel.component.netty-http.host}")
+    @Value("${camel.component.servlet.host}")
     private String host;
 
-    @Value("${camel.component.netty-http.port}")
+    @Value("${camel.component.servlet.port}")
     private String port;
+
+    @Value("${camel.component.servlet.sourceEndpointPath}")
+    private String sourceEndpointPath;
+
+    @Value("${camel.component.servlet.destinationEndpointPath}")
+    private String destinationEndpointPath;
 
     @Override
     public void configure() throws Exception {
@@ -41,30 +39,32 @@ public class RestApiBuilder extends RouteBuilder {
         response.data = "apache camel response";
         response.status = HttpStatus.OK.toString();
         response.statusCode = HttpStatus.OK.value();
-        String url = String.format("%s://%s:%s/hello2?bridgeEndpoint=true", scheme, host, port);
+        String sourceURI = String.format("rest:post:%s", sourceEndpointPath);
+        String destinationUrl = String.format("%s://%s:%s/%s?bridgeEndpoint=true", scheme, host, port, destinationEndpointPath);
 
         restConfiguration().component("servlet").bindingMode(RestBindingMode.auto);
-        from("rest:post:hello1")
+        from(sourceURI)
                 .setHeader(Exchange.HTTP_METHOD, () -> HttpPost.METHOD_NAME)
                 .setHeader(HttpConstants.CONTENT_TYPE, () -> ContentType.APPLICATION_JSON)
                 .process(exchange -> {
                     String payload = exchange.getIn().getBody(String.class);
                     RequestBody requestBody = objectMapper.readValue(payload, RequestBody.class);
-                    log.info("RequestBody data : {} {}", requestBody.name, requestBody.age);
+                    log.info("RequestBody Data : {} {}", requestBody.name, requestBody.age);
                     requestBody.name += "interceptor";
                     requestBody.age = 28;
                     exchange.getIn().setBody(objectMapper.writeValueAsBytes(requestBody));
                 })
-                .log("calling rest endpoint")
-                .to(url)
+                .log(String.format("Calling Rest Endpoint: %s", destinationUrl))
+                .to(destinationUrl)
                 .process(exchange -> {
                     String payload = exchange.getIn().getBody(String.class);
                     ResponseBody responseBody = objectMapper.readValue(payload, ResponseBody.class);
-                    log.info("RequestBody data : {} {}", responseBody.status, responseBody.statusCode);
+                    log.info("ResponseBody Data : {} {}", responseBody.status, responseBody.statusCode);
                 });
 
-        from("rest:post:hello2")
-                .log("writing request to file")
+        String source2URI = String.format("rest:post:%s", destinationEndpointPath);
+        from(source2URI)
+                .log("sending apache camel response back")
                 .transform().constant(objectMapper.writeValueAsString(response));
     }
 
