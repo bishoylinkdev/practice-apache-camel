@@ -39,7 +39,7 @@ public class RestApiBuilder extends RouteBuilder {
         response.status = HttpStatus.OK.toString();
         response.statusCode = HttpStatus.OK.value();
         String sourceURI = String.format("rest:post:%s", sourceEndpointPath);
-        String destinationUrl = String.format("%s://%s:%s/%s?bridgeEndpoint=true", scheme, host, port, destinationEndpointPath);
+        String destinationUrl = String.format("%s://%s:%s/camel/%s?bridgeEndpoint=true", scheme, host, port, destinationEndpointPath);
 
         restConfiguration().component("servlet").bindingMode(RestBindingMode.auto);
         from(sourceURI)
@@ -57,6 +57,7 @@ public class RestApiBuilder extends RouteBuilder {
                 .process(exchange -> {
                     String payload = exchange.getIn().getBody(String.class);
                     log.info("ResponseBody Data : {}", payload);
+                    exchange.getIn().setBody(objectMapper.writeValueAsBytes(response));
                 });
 
         String source2URI = String.format("rest:post:%s", destinationEndpointPath);

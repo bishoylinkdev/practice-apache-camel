@@ -1,0 +1,93 @@
+openapi: 3.0.0
+info:
+  title: MOSS APIs
+  description: |-
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: mossteam@moss.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: https://api-3scale-apicast-production.apps.moss.eastus.aroapp.io/api/v1
+tags:
+  - name: Lookups
+    description: MOSS System Lookups
+    externalDocs:
+      description: Find out more
+      url: http://swagger.io
+paths:
+  /lookups:
+    get:
+      tags:
+        - Lookups
+      summary: Lookups endpoint
+      description: Get lookups based on key
+      operationId: getLookupsBykeys
+      parameters:
+        - name: lookupKeys
+          in: query
+          description: lookup key
+          required: true
+          schema:
+            $ref: '#/components/schemas/LookupKeys'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LookupList'
+        '400':
+          description: Bad Request
+components:
+  schemas:
+    LookupKeys:
+      type: array
+      items:
+        type: string
+        default: AID_TYPE
+        enum:
+          - AID_TYPE
+          - INCOME_SOURCE_TYPE
+          - EXPENSES_SOURCE_TYPE
+          - REQUESTOR_TYPE
+    LookupList:
+      type: object
+      properties:
+        aidTypes:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+                example: aidType1
+        incomeSourceTypes:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+                example: incomeSourceType1
+        expensesSourceTypes:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+                example: expensesSourceType1
+        requestorTypes:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+                example: requestorType1
